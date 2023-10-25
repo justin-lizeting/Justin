@@ -10223,29 +10223,16 @@ section.resume-section .resume-section-content {
 
 
 
-/*
-.con{width:1000px;margin:0 auto;border:1px solid #ccc;padding:10px 0;}
-.con:after{clear:both;display:block;width:0;height:0;content:""}
 
-.imgs{width:500px;height:300px;float:right;border:1px solid #ccc}
-
-
- <!--.pic{width:500px;height:300px;float:right;border:1px solid #ccc}-->
-
-<!--.pic img{width:100px;height:80px;}-->
-.resume-section-content{float:left;width:300px;margin-left:90px;}	
-			
-		
-	<!-- 以下是右边图片的一些定义 -->	
-		
-		
-        div#miaovslide {text-align: center;}
-        .wrap{width:500px;overflow: hidden; height: 700px;margin: 0 auto;position: relative;}
-        .wrap img{width: 100%;}
-        li{list-style: none;width: 700px;height: 344px;padding: 10px 0;}
-        ul{position: absolute;top: 0;left: 0;}		
-		
     }
 	
 	
-	
+	let video=document.getElementById("startvideo");
+let videoPlay = video.play();
+videoPlay.then(() => {
+    console.log('可以自动播放');
+}).catch((err) => {
+    console.log("不允许自动播放");
+    video.muted=true;
+    video.play();
+})
