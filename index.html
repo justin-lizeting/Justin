@@ -16,22 +16,6 @@
 		
 <script>
 
-  <!-- Ken 1024---Ken edited the content in 1024
-//var cot=0;//设置一个计数器，初始值为0；作用是用来监听点击切换的时候哪一个图片应该隐藏或者显示
-//function nex(){
-//  if(cot<=2){
-//    $('.imgs img').eq(cot).animate({'margin-left':'-305px'},500);
-//    cot++;
-//  }
-//}
-//function pre(){
-//  if(cot>0){
-//    cot--;
-//    $('.imgs img').eq(cot).animate({'margin-left':'0'},500);
-//  }
-//}
- //  Ken 1024---Ken edited the content in 1024-->
-
 
 </script>
 		
@@ -77,32 +61,56 @@
                     <div class="subheading mb-5">
                         Shanghai · China · <a href="mailto:name@email.com">justinlizeting@163.com</a>
                  
- <!-- Ken 1024--
-				 </div>
-           
-				 <p class="lead mb-5">所有内容都有益身心健康，欢迎每天品尝。欢迎点击下列图标查看我们在不同平台的服务和内容！</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="http://JustinLi.cn/"><i class="fas fa-rocket"></i></a>
-                        <a class="social-icon" href="https://JustinLi.github.io/JustinLi/"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://mp.weixin.qq.com/s/YYZilgFSHrh-nrjF3Z2G7A"><i class="fab fa-weixin"></i></a>
-                        <a class="social-icon" href="https://www.zhihu.com/people/JustinLi"><i class="fab fa-zhihu"></i></a>
-                        <a class="social-icon" href="https://www.douyin.com/user/MS4wLjABAAAAPFvcvoD4PrSqrAvA1ehFu9S3OL-oKdCqH_V54POznMI"> <i class="fab fa-tiktok"></i></a>
+ <!-- Ken 1024--Video 播放背景的部分-->
 
-                        </div>
-                </div>
- <!-- Ken 1024--				
-					<video autoplay loop muted src="assets/img/sample002.MP4"></video><!-- 视频背景图就这一行 muted 一定要保留，去掉视频中的音频--
-				<video autoplay loop muted>
- <!-- Ken 1024--   <source src="https://github.com/justin-lizeting/Justin/tree/main/assets/img/sample002.mp4" type="video/mp4">
+ <!-- Ken 1024--VIDEO版本1-->				
+	 <!-- Ken 1024--VIDEO版本1--	
+	 <video autoplay loop muted src="assets/img/sample002.MP4"></video><!-- 视频背景图就这一行 muted 一定要保留，去掉视频中的音频-->
+					
+					
+<!-- Ken 1024--VIDEO版本2-->				
+	 <!-- Ken 1024--VIDEO版本2--	
+	 <video autoplay loop muted>
+                <source src="https://github.com/justin-lizeting/Justin/tree/main/assets/img/sample002.mp4" type="video/mp4">
 </video>
-		 -->			
+		 <!-- 视频背景图就这两行 muted 一定要保留，去掉视频中的音频-->		
+
+
+<!-- Ken 1025--VIDEO版本3--
+	
+	
 <video
     muted loop autoplay
     playsinline webkit-playsinline
     x5-video-player-type="h5-page"  
     src="assets/img/sample002.MP4">	
 </video>
-	
+<!-- Ken 1025--以上版本3做了手机H5适配-->	
+
+
+<video preload="" muted="muted" autoplay="autoplay" loop="loop" x5-playsinline="" playsinline="" webkit-playsinline="" x5-video-player-type="h5"><source src="http://wiki.sipeed.com/hardware/zh/maixII/M2A/MaixSense/assets/M2A-1.mp4" type="video/mp4">
+                Your brower not support video play!
+            </video>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 					
             </section>	
             <hr class="m-0" />  <!-- Ken 1024-- 分割线   >	
@@ -125,9 +133,6 @@
 
 
 <div class="con"><!-- KEN 1025 用来置顶一个容器，style末尾定义 -->
-
-
-
 
 
 
@@ -174,23 +179,7 @@
 				
   	<!-- 重要 添加指示器 -      </section>    	<!-- section原来位置  -->
 	
-
 <!-- 包含指示器功能的轮播图 -
-	
-			<div style="width:900px;margin:auto;overflow:hidden"> -- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 
-  <div class="imgs" style="width:50000px;">--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好
-    <img src="assets/img/1.jpg" />--这里的图片换上到时候自己对应的图片
-    <img src="assets/img/2.jpg" />
-    <img src="assets/img/3.jpg" />
-    <img src="assets/img/4.jpg" />
-    <img src="assets/img/5.jpg" />
-    <img src="assets/img/6.jpg" />
-  </div>
-  <div>
-    <div onclick="pre()" style="float:left;cursor:pointer">Previous</div>
-    <div onclick="nex()" style="float:right;cursor:pointer">Next</div>
-  </div>
-</div>
 		
 -- 包含指示器功能的轮播图 -->
 
@@ -234,55 +223,7 @@
 
 
           </section>    
-
-
-
-
-
 		
-	 <!-- Ken 1024-- 分割线   	
-	 <div style="width:600px;margin:auto;overflow:hidden"><!-- Ken 1024-- 添加了外框   	
-  <div class="imgs" style="width:600px;">	<!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好
-	 
-		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-<ol class="carousel-indicators">
-<li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-<li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-<li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-</ol>
-<div class="carousel-inner">
-<div class="carousel-item active">
-  <img src="assets/img/1.jpg" class="d-block w-100" alt=".001.">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>First slide label</h5>
-    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-  </div>
-</div>
-<div class="carousel-item">
-  <img src="assets/img/4.jpg" class="d-block w-100" alt=".002.">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>Second slide label</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-</div>
-<div class="carousel-item">
-  <img src="assets/img/5.jpg" class="d-block w-100" alt=".003.">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>Third slide label</h5>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-  </div>
-</div>
-</div>
-<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</a>
-<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</a>
-</div>	
-			
 		 <!-- Ken 1024-- 分割线  	-->
 
 
@@ -292,16 +233,7 @@
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
+	
 
 
 
@@ -485,203 +417,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
-.con{width:500px;margin:0 auto;border:0px solid #ccc;padding:10px 0;}
-.con:after{clear:both;display:block;width:0;height:0;content:""}
-
-.imgs{width:800px;height:500px;float:right;border:0px solid #ccc}
-
-
-/*
-.con{width:1000px;margin:0 auto;border:1px solid #ccc;padding:10px 0;}
-.con:after{clear:both;display:block;width:0;height:0;content:""}
-
-.imgs{width:500px;height:300px;float:right;border:1px solid #ccc}
-
-
- <!--.pic{width:500px;height:300px;float:right;border:1px solid #ccc}-->
-
-<!--.pic img{width:100px;height:80px;}--
-.resume-section-content{float:left;width:300px;margin-left:90px;}	
-			
-		
-	<!-- 以下是右边图片的一些定义 --	
 		
 		
-        div#miaovslide {text-align: center;}
-        .wrap{width:500px;overflow: hidden; height: 700px;margin: 0 auto;position: relative;}
-        .wrap img{width: 100%;}
-        li{list-style: none;width: 700px;height: 344px;padding: 10px 0;}
-        ul{position: absolute;top: 0;left: 0;}		
 		
-    }
-	
-
-
-
-		
-			
-			
-			
-			
-		  <!-- Skills-	
-            <!-- Education-->
-			  <!-- Skills-
-			
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SSBS</h3>
-                            <div class="subheading mb-3">G12 Student</div>
-                            <div>Film Art</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021 Sep - present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SSBS</h3>
-                            <div class="subheading mb-3">高中毕业生</div>
-                            <div>Film Art</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2017 Sep - 2021 Jun</span></div>
-                    </div>
-                </div>
-            </section>
-		
-            <hr class="m-0" /> <!-- Ken 1024-- 分割线   >	
-			
-			
-		  <!-- 	
-			
-            <!-- Skills-->
-			  <!-- Skills-
-			  
-			  
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">编程语言和技能</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="far fa-chart-bar"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-
-                    </ul>
-                    <div class="subheading mb-3">强项</div>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          人工智能
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          数据分析
-                      </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Python
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            项目管理
-                        </li>
-                    </ul>
-                </div>
-            </section>
-			
-	  <!-- Skills-->
-	
-
-
-
-<!-- Ken 1024-- 分割线   
-	
-			
-			<div style="width:900px;margin:auto;overflow:hidden"> -- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 --
-  <div class="imgs" style="width:50000px;">!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好--
-    <img src="assets/img/7.jpg" />!--这里的图片换上到时候自己对应的图片--
-    <img src="assets/img/8.jpg" />
-    <img src="assets/img/9.jpg" />
-    <img src="assets/img/10.jpg" />
-    <img src="assets/img/11.jpg" />
-    <img src="assets/img/12.jpg" />
-  </div>
-  <div>
-    <div onclick="pre()" style="float:left;cursor:pointer">Previous1</div>
-    <div onclick="nex()" style="float:right;cursor:pointer">Next1</div>
-  </div>
-</div>
-
-            <hr class="m-0" /> <!-- Ken 1024-- 分割线   >	
-			
-	<!-- Ken 1024-- 分割线   >			
-			
-			
-            <!-- Interests-->
-			<!-- Ken 1024-- 分割线   >	
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>摄影、篮球、阅读、编程</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards--
-			
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                          1<sup>st</sup> 2021AWARDDDDD
-                      </li>
-                    </ul>
-                </div>
-            </section>
-			<!-- Ken 1024-- 分割线   >	
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-			
-			
-			
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
